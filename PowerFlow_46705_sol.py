@@ -29,7 +29,12 @@ def PowerFlowNewton(Ybus,Sbus,V0,pv_index,pq_index,max_iter,err_tol,print_progre
         J_dS_dVm,J_dS_dTheta = generate_Derivatives(Ybus,V)
         J = generate_Jacobian(J_dS_dVm,J_dS_dTheta,pv_index,pq_index)
         # Compute step
-        dx = np.linalg.solve(J,F)
+        try:
+            dx = np.linalg.solve(J, F)
+        except Exception as e:
+            if print_progress:
+                print(f"Power Flow Newton: linalg.solve threw an exception: {e}")
+
         # Update voltages and check if tolerance is now reached
         V = Update_Voltages(dx,V,pv_index,pq_index)
         F = calculate_F(Ybus,Sbus,V,pv_index,pq_index)

@@ -1,0 +1,40 @@
+9. Prepare Nordic32 System Studies
+Load the Nordic32 model and run the load flow. Examine whether there are any line flow or
+voltage violations in the base case.
+
+?? QUESTION:Voltage violations: er det meningen at Vmin og max er 0.9 og 1.1?
+
+I så fald ingen fejl. Minimum voltage er 0.935 pu på bus 141, maximum er 1.007 på bus 4032.
+  Bus       Bus          Voltage             Generation                  Load
+   #       Label    Mag(pu)  Ang(deg)   P (pu)  Q(pu)   loading     P (pu)  Q(pu)
+ -----   ---------  -------  -------  -------  --------  -------   -------  -------
+ 141     BUS141     0.935   -79.58      -         -       -        6.000     2.000
+ 4032    BUS4032     1.007   -37.01      -         -       -        0.000    -0.000
+
+Generator loading er OK. Højeste generator loading er 94.46% på bus 1022
+  Bus       Bus          Voltage             Generation                  Load
+   #       Label    Mag(pu)  Ang(deg)   P (pu)  Q(pu)   loading     P (pu)  Q(pu)
+ -----   ---------  -------  -------  -------  --------  -------   -------  -------
+ 1022    BUS1022     1.000   -11.13    2.000     1.256    94.46%    2.800    -0.950
+
+ Transformer loading er OK. Bemærk at transformere er from bus nummer xx eller xxx i listen. Trafoen på branch 55, bus 43
+ er den højest loadede from/to 93.11%/95.04%.
+ ==============================================================================
+| Branch flow                                                                 |
+ ==============================================================================
+|Branch  From   To        From Bus Injection              To Bus Injection    |
+|  #     Bus    Bus    P (pu)   Q (pu)  loading        P (pu)   Q (pu) loading|
+ -----  -----  -----  -------  -------- -------        ------- ------- -------
+  55      43   4043    -9.000  -2.388    93.11%         9.000   3.054   95.04%
+
+
+Branchflow er OK. Den højest loaded line er branch 30 mellem busses 4031 og 4032
+ ==============================================================================
+| Branch flow                                                                 |
+ ==============================================================================
+|Branch  From   To        From Bus Injection              To Bus Injection    |
+|  #     Bus    Bus    P (pu)   Q (pu)  loading        P (pu)   Q (pu) loading|
+ -----  -----  -----  -------  -------- -------        ------- ------- -------
+  55      43   4043    -9.000  -2.388    93.11%         9.000   3.054   95.04%
+  30    4031   4032     9.251  -1.313    98.36%        -9.164   1.880   98.48%
+
