@@ -200,7 +200,7 @@ print('*'*50)
 print('*             Performance Indexes               *')
 print('*'*50)
 
-n = 1
+n = 2
 m = 20
 # constants and variables for performance indexes
 n_lines = 52
@@ -235,7 +235,7 @@ for i in range(n_lines): #sweep over branches
 
     ### Power Flow
     try:
-        V,success,n = pf.PowerFlowNewton(Ybus_mod,lnd.Sbus,lnd.V0,lnd.pv_index,lnd.pq_index,max_iter,err_tol,print_progress=False)
+        V,success,_ = pf.PowerFlowNewton(Ybus_mod,lnd.Sbus,lnd.V0,lnd.pv_index,lnd.pq_index,max_iter,err_tol,print_progress=False)
         ## branch flows
         br_f = lnd.br_f
         I_from = Yfr_mod.dot(V)
@@ -243,7 +243,7 @@ for i in range(n_lines): #sweep over branches
         P_from = np.real(S_from * MVA_base)
 
         # Power fraction
-        P_frac_vec = (P_from / Pmax_br) ** (2 * n)
+        P_frac_vec = (P_from / Pmax_br)**(2 * n)
 
         # PI_flow index line i
         PI_flow_vec[i] = np.sum(P_frac_vec)
@@ -255,6 +255,8 @@ for i in range(n_lines): #sweep over branches
     except Exception as e:
         #print(f"Performance Index: Power Flow Newton: linalg.solve threw an exception: {e}")
         error = 1
+
+hey = 0
 
 
 

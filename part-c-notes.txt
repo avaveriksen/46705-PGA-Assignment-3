@@ -38,3 +38,12 @@ Branchflow er OK. Den højest loaded line er branch 30 mellem busses 4031 og 403
   55      43   4043    -9.000  -2.388    93.11%         9.000   3.054   95.04%
   30    4031   4032     9.251  -1.313    98.36%        -9.164   1.880   98.48%
 
+
+
+De værste contingencies baseret på performance indexes
+	  21			4011		  4021		27.75    14.7
+      47			4046		  4047		30.07    15.32
+
+
+Den contingency som umiddelbart har den mindste effekt er er
+8			1021		  1022		8.68    14.50
