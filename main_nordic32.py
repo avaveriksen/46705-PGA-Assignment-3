@@ -204,12 +204,15 @@ n = 2
 m = 20
 # constants and variables for performance indexes
 n_lines = 52
-P_frac_vec = np.zeros(n_lines)
+n_busses = len(lnd.bus_labels)
+n_branches = len(lnd.br_f)
+
+P_frac_vec = np.zeros(n_branches)
 PI_flow_vec = np.zeros(n_lines)
 
 PI_volt_vec = np.zeros(n_lines)
-Vmin = np.ones(n_lines) * 0.9
-Vmax = np.ones(n_lines) * 1.1
+Vmin = np.ones(n_busses) * 0.9
+Vmax = np.ones(n_busses) * 1.1
 
 MVA_base = lnd.MVA_base
 Pmax_br = lnd.br_MVA
@@ -218,7 +221,7 @@ Pmax_br = lnd.br_MVA
 print(f"Contingency       from         to        PIflow        PIV")
 print(f"------------    --------    --------    --------    --------")
 
-for i in range(n_lines): #sweep over branches
+for i in range(n_lines): #sweep over lines. Not taking out trafos.
     # get modified Y matrixes
     fr_ind = lnd.br_f[i]
     fr_bus = lnd.ind_to_bus[fr_ind]
@@ -237,7 +240,7 @@ for i in range(n_lines): #sweep over branches
     try:
         V,success,_ = pf.PowerFlowNewton(Ybus_mod,lnd.Sbus,lnd.V0,lnd.pv_index,lnd.pq_index,max_iter,err_tol,print_progress=False)
         ## branch flows
-        br_f = lnd.br_f
+        br_f = lnd.br_f # branch from bus
         I_from = Yfr_mod.dot(V)
         S_from = V[br_f] * I_from.conj()
         P_from = np.real(S_from * MVA_base)
@@ -249,15 +252,14 @@ for i in range(n_lines): #sweep over branches
         PI_flow_vec[i] = np.sum(P_frac_vec)
 
         # PI_volt line i
-        PI_volt_vec[i] = np.sum( (Vmin / abs(V[br_f[0:n_lines]]) )**m ) + np.sum( ( abs(V[br_f[0:n_lines]]) / Vmax)**m )
+        PI_volt_vec[i] = np.sum( (Vmin / abs(V) )**m ) + np.sum( ( abs(V) / Vmax)**m )
 
         print(f"\t  {i + 1:2.0f}\t\t\t{fr_bus}\t\t  {to_bus}\t\t{PI_flow_vec[i]:.2f}    {PI_volt_vec[i]:.2f}")
     except Exception as e:
         #print(f"Performance Index: Power Flow Newton: linalg.solve threw an exception: {e}")
         error = 1
 
-hey = 0
-
+hey = 1
 
 
 
