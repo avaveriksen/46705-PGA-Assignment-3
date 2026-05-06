@@ -1,0 +1,61 @@
+---------------------------------------------------------------
+Tripping of branch 53 (bus 41 - bus 4041) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 53 (bus 41 - bus 4041) is tripped
+---------------------------------------------------------------
+Tripping of branch 54 (bus 42 - bus 4042) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 54 (bus 42 - bus 4042) is tripped
+---------------------------------------------------------------
+Tripping of branch 55 (bus 43 - bus 4043) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 55 (bus 43 - bus 4043) is tripped
+---------------------------------------------------------------
+Tripping of branch 56 (bus 46 - bus 4046) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 56 (bus 46 - bus 4046) is tripped
+---------------------------------------------------------------
+Tripping of branch 57 (bus 47 - bus 4047) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 57 (bus 47 - bus 4047) is tripped
+---------------------------------------------------------------
+Tripping of branch 58 (bus 51 - bus 4051) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 58 (bus 51 - bus 4051) is tripped
+---------------------------------------------------------------
+Tripping of branch 59 (bus 61 - bus 4061) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 59 (bus 61 - bus 4061) is tripped
+---------------------------------------------------------------
+Tripping of branch 60 (bus 62 - bus 4062) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 60 (bus 62 - bus 4062) is tripped
+---------------------------------------------------------------
+Tripping of branch 61 (bus 63 - bus 4063) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 61 (bus 63 - bus 4063) is tripped
+---------------------------------------------------------------
+Tripping of branch 62 (bus 1011 - bus 4011) [OK!]
+---------------------------------------------------------------
+Tripping of branch 63 (bus 1012 - bus 4012) [Violations!]
+ --> Generator at bus 1013 overloaded (Qgen = 366.28  > 300.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 64 (bus 1022 - bus 4022) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 64 (bus 1022 - bus 4022) is tripped
+---------------------------------------------------------------
+Tripping of branch 65 (bus 1044 - bus 4044) [OK!]
+---------------------------------------------------------------
+Tripping of branch 66 (bus 1044 - bus 4044) [OK!]
+---------------------------------------------------------------
+Tripping of branch 67 (bus 1045 - bus 4045) [OK!]
+---------------------------------------------------------------
+Tripping of branch 68 (bus 1045 - bus 4045) [OK!]
+---------------------------------------------------------------
+Tripping of branch 69 (bus 2031 - bus 4031) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 69 (bus 2031 - bus 4031) is tripped
+---------------------------------------------------------------
+Tripping of branch 70 (bus 141 - bus 1041) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 70 (bus 141 - bus 1041) is tripped
+---------------------------------------------------------------
+Tripping of branch 71 (bus 142 - bus 1042) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 71 (bus 142 - bus 1042) is tripped
+---------------------------------------------------------------
+Tripping of branch 72 (bus 143 - bus 1043) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 72 (bus 143 - bus 1043) is tripped
+---------------------------------------------------------------
+Tripping of branch 73 (bus 144 - bus 1044) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 73 (bus 144 - bus 1044) is tripped
+---------------------------------------------------------------
+Tripping of branch 74 (bus 145 - bus 1045) [CONVERGENCE ISSUES!]
+ --> Load Flow error (Jacobian) when branch 74 (bus 145 - bus 1045) is tripped

@@ -1,0 +1,99 @@
+---------------------------------------------------------------
+Tripping of branch 7 (bus 1021 - bus 1022) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 119.20  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 220.90  > 130.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 8 (bus 1021 - bus 1022) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 119.20  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 220.90  > 130.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 11 (bus 1041 - bus 1045) [Violations!]
+ --> Generator at bus 1043 overloaded (Loading = 101.17  [%])
+---------------------------------------------------------------
+Tripping of branch 12 (bus 1041 - bus 1045) [Violations!]
+ --> Generator at bus 1043 overloaded (Loading = 101.17  [%])
+---------------------------------------------------------------
+Tripping of branch 20 (bus 4011 - bus 4012) [Violations!]
+ --> Generator at bus 1022 overloaded (Qgen = 148.79  > 130.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 21 (bus 4011 - bus 4021) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 211.09  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 488.35  > 130.00 [MVAr])
+ --> Generator at bus 4021 overloaded (Loading = 111.39  [%])
+ --> Generator at bus 4021 overloaded (Qgen = -221.74  < -75.00 [MVAr])
+ --> Generator at bus 4031 overloaded (Loading = 235.65  [%])
+ --> Generator at bus 4031 overloaded (Qgen = 764.30  > 175.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 22 (bus 4011 - bus 4022) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 112.17  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 196.55  > 130.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 24 (bus 4012 - bus 4022) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 110.58  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 190.86  > 130.00 [MVAr])
+ --> Generator at bus 4011 overloaded (Qgen = 544.55  > 500.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 26 (bus 4021 - bus 4032) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 107.12  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 178.09  > 130.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 27 (bus 4021 - bus 4042) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 112.25  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 196.84  > 130.00 [MVAr])
+ --> Generator at bus 4031 overloaded (Loading = 126.56  [%])
+ --> Generator at bus 4031 overloaded (Qgen = 316.40  > 175.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 28 (bus 4022 - bus 4031) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 124.64  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 238.94  > 130.00 [MVAr])
+ --> Generator at bus 4021 overloaded (Loading = 101.17  [%])
+ --> Generator at bus 4021 overloaded (Qgen = 172.12  > 150.00 [MVAr])
+ --> Generator at bus 4031 overloaded (Loading = 105.84  [%])
+ --> Generator at bus 4031 overloaded (Qgen = 202.82  > 175.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 29 (bus 4022 - bus 4031) [Violations!]
+ --> Generator at bus 1022 overloaded (Loading = 124.64  [%])
+ --> Generator at bus 1022 overloaded (Qgen = 238.94  > 130.00 [MVAr])
+ --> Generator at bus 4021 overloaded (Loading = 101.17  [%])
+ --> Generator at bus 4021 overloaded (Qgen = 172.12  > 150.00 [MVAr])
+ --> Generator at bus 4031 overloaded (Loading = 105.84  [%])
+ --> Generator at bus 4031 overloaded (Qgen = 202.82  > 175.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 30 (bus 4031 - bus 4032) [Violations!]
+ --> Generator at bus 4021 overloaded (Loading = 107.27  [%])
+ --> Generator at bus 4021 overloaded (Qgen = 202.57  > 150.00 [MVAr])
+ --> Generator at bus 4042 overloaded (Qgen = -267.02  < -150.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 31 (bus 4031 - bus 4041) [Violations!]
+ --> Generator at bus 4031 overloaded (Loading = 115.36  [%])
+ --> Generator at bus 4031 overloaded (Qgen = 258.66  > 175.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 32 (bus 4031 - bus 4041) [Violations!]
+ --> Generator at bus 4031 overloaded (Loading = 115.36  [%])
+ --> Generator at bus 4031 overloaded (Qgen = 258.66  > 175.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 34 (bus 4032 - bus 4044) [Violations!]
+ --> Generator at bus 1022 overloaded (Qgen = 139.78  > 130.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 35 (bus 4041 - bus 4044) [Violations!]
+ --> Generator at bus 4041 overloaded (Qgen = -264.29  < -200.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 37 (bus 4042 - bus 4043) [Violations!]
+ --> Generator at bus 1022 overloaded (Qgen = 135.93  > 130.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 38 (bus 4042 - bus 4044) [Violations!]
+ --> Generator at bus 1022 overloaded (Qgen = 135.42  > 130.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 39 (bus 4043 - bus 4044) [Violations!]
+ --> Generator at bus 4051 overloaded (Qgen = -176.14  < -170.00 [MVAr])
+---------------------------------------------------------------
+Tripping of branch 47 (bus 4046 - bus 4047) [Violations!]
+ --> Generator at bus 1022 overloaded (Qgen = 130.67  > 130.00 [MVAr])
+ --> Voltages too low at ...
+      Bus 46   ->  0.888 pu < V_min: 0.900 pu
+---------------------------------------------------------------
+Tripping of branch 48 (bus 4061 - bus 4062) [Violations!]
+ --> Generator at bus 1022 overloaded (Qgen = 139.64  > 130.00 [MVAr])
+ --> Voltages too low at ...
+      Bus 61   ->  0.859 pu < V_min: 0.900 pu
+      Bus 4061 ->  0.879 pu < V_min: 0.900 pu

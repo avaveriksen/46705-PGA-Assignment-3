@@ -10,6 +10,8 @@ max_iter = 30   # Iteration settings
 err_tol = 1e-3
 # Load the Network data ...
 filename = "Nordic32_SA.txt"
+#filename = "Nordic32_SA_con1.txt" #contingency on line number 1 from 1011 to 1013
+#filename = "Nordic32_SA_con47.txt" #contingency on line number 47 from 4046 to 4047
 
 
 lnd.LoadNetworkData(filename) # makes Ybus available as lnd.Ybus etc.
@@ -259,7 +261,24 @@ for i in range(n_lines): #sweep over lines. Not taking out trafos.
         #print(f"Performance Index: Power Flow Newton: linalg.solve threw an exception: {e}")
         error = 1
 
-hey = 1
+# ranking contingencies
+PI_flow_vec_norm = PI_flow_vec / PI_flow_vec.min()
+PI_volt_vec_norm = PI_volt_vec / PI_volt_vec.min()
+PI_norm = PI_flow_vec_norm + PI_volt_vec_norm
+
+# sort PI norm by size
+PI_norm_sorted_idx = np.argsort(PI_norm)
+PI_norm_sorted_idx = PI_norm_sorted_idx[::-1]
+
+print('*'*50)
+print('*             Contingencies Ranked               *')
+print('*'*50)
+print(f"Contingency       from         to        PIflow        PIV      PI_norm")
+print(f"------------    --------    --------    --------    --------    --------")
+for idx in PI_norm_sorted_idx:
+    print(f"\t{idx + 1}\t\t\t{lnd.ind_to_bus[lnd.br_f[idx]]}\t\t{lnd.ind_to_bus[lnd.br_t[idx]]}\t\t{PI_flow_vec[idx]:.2f}\t\t{PI_volt_vec[idx]:.2f}\t\t{PI_norm[idx]:.2f}")
+
+hey = 0
 
 
 
