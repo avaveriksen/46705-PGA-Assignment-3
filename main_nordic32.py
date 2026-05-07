@@ -9,9 +9,10 @@ import LoadNetworkData_sol as lnd # load the network data to global variables
 max_iter = 30   # Iteration settings
 err_tol = 1e-3
 # Load the Network data ...
-filename = "Nordic32_SA.txt"
+#filename = "Nordic32_SA.txt"
 #filename = "Nordic32_SA_con1.txt" #contingency on line number 1 from 1011 to 1013
 #filename = "Nordic32_SA_con47.txt" #contingency on line number 47 from 4046 to 4047
+filename = "Nordic32_SA_fix47.txt" # contingency on line number 47 with system fixes
 
 
 lnd.LoadNetworkData(filename) # makes Ybus available as lnd.Ybus etc.

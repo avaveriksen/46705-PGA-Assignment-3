@@ -47,3 +47,15 @@ De værste contingencies baseret på performance indexes
 
 Den contingency som umiddelbart har den mindste effekt er er
 8			1021		  1022		8.68    14.50
+
+
+
+
+
+
+
+Branch 4043 to 4046 is overloaded since one line can't supply the load demand after second line is out.
+1. Increase V @ bus 4047 from 1.00 to 1.05
+    * This causes 198% loading on line 4043 to 4047
+2. Decrease P @ bus 4047 from 1080 to 400. This brings down line loading from 198% to 99.7%
+    * Causes line overloads on 11 other lines, that have to supply the power removed from gen 4047
